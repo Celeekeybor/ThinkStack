@@ -1,0 +1,103 @@
+/* src/pages/Home.css (Final Version) */
+
+/* --- Hero Section (Larger & More Impactful) --- */
+.hero-section {
+  position: relative;
+  /* Make the hero section taller for a more epic feel */
+  padding: 10rem 2rem; 
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  /* We will wrap this in a container, so we remove the margin/radius */
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #1A1A2E; /* This is the dark background */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures text is on top of particles */
+}
+
+/* Larger, more impactful fonts */
+.hero-section h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 750px;
+  margin: 1.5rem auto;
+  line-height: 1.6;
+}
+
+.hero-section .btn {
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px; /* Pill-shaped button */
+    transition: all 0.3s ease;
+}
+
+/* --- General Section Styling for Spacing & Flow --- */
+.page-section {
+  /* This class adds consistent vertical space between all sections */
+  padding: 5rem 0; 
+}
+
+.section-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 4rem; /* More space below headings */
+}
+
+/* --- Revamped "How It Works" Section --- */
+.how-it-works-section {
+  background-color: #f8f9fa; /* Light grey background to separate it */
+}
+
+.step-card {
+  padding: 2.5rem;
+  border: 1px solid #e9ecef;
+  border-radius: var(--border-radius);
+  background-color: var(--light-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Makes all cards in a row the same height */
+  text-align: center;
+}
+
+.step-card:hover {
+  transform: translateY(-10px); /* More pronounced hover effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step-card h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+}
+
+.step-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-muted-color);
+}
+
+.how-it-works-icon {
+  font-size: 3rem;
+  /* Use a gradient for a modern look */
+  background: linear-gradient(45deg, var(--primary-color), #8a2be2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

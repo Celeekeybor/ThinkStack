@@ -1,0 +1,250 @@
+/* src/App.css */
+
+/* --- Google Fonts Import --- */
+@import url('./pages/Home.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- CSS Variables for a consistent and modern theme --- */
+:root {
+  --primary-color: #6C63FF;
+  --primary-hover-color: #5a52d9;
+  --secondary-color: #f8f9fa; /* Light grey background */
+  --dark-color: #212529;
+  --light-color: #FFFFFF;
+  --text-color: #343a40;
+  --text-muted-color: #6c757d;
+  --font-family: 'Poppins', sans-serif;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+  background-color: var(--light-color) !important;
+  box-shadow: var(--box-shadow);
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-color) !important;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+/* --- Main Content --- */
+main {
+  padding: 2rem 1rem;
+  flex-grow: 1; /* Ensures main content takes up available space */
+}
+
+/* --- Reusable Card component style --- */
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: none;
+  background-color: var(--light-color);
+}
+
+.card-title {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* --- Buttons --- */
+.btn {
+  border-radius: var(--border-radius);
+  padding: 0.65rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-hover-color);
+  border-color: var(--primary-hover-color);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+}
+
+/* --- Forms --- */
+.form-control, .form-select {
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* --- Alert --- */
+.alert {
+  border-radius: var(--border-radius);
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 1.5rem 0;
+  margin-top: 4rem; /* Give space above the footer */
+}
+
+/* --- Links --- */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-hover-color);
+}
+
+/* src/App.css */
+
+/* ... (all your existing styles) ... */
+
+
+/* --- NEW: Professional Footer Styles --- */
+.footer-section {
+  background-color: var(--dark-color);
+  color: #adb5bd; /* Lighter grey for better readability */
+  padding: 4rem 0;
+  margin-top: 4rem;
+}
+
+.footer-section h5 {
+  color: var(--light-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin-bottom: 1rem;
+}
+
+.footer-section .footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section .footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-section .footer-links a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section .footer-links a:hover {
+  color: var(--light-color);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #343a40;
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-social-icons a {
+    color: #adb5bd;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* src/App.css */
+/* ... (all your existing styles) ... */
+
+/* --- NEW: Challenge Detail Page Styles --- */
+.challenge-detail-card {
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  border: none;
+  overflow: hidden; /* Important for the header */
+}
+
+.challenge-detail-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+.challenge-detail-header h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.challenge-detail-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-item .meta-label {
+  font-weight: 600;
+  color: var(--text-muted-color);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.meta-item .meta-label i {
+  margin-right: 0.5rem;
+}
+
+.meta-item .meta-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.challenge-detail-actions {
+  padding: 1.5rem 2rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+

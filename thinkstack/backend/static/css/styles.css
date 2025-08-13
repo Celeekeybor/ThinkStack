@@ -1,0 +1,39 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.form-control {
+    border-radius: 5px;
+}
+.hero-section {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+}
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
